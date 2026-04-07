@@ -2,9 +2,18 @@
 
 ## Project Overview
 
-This project aims to detect breast cancer from high-resolution 3D breast tissue scans by analyzing **μ-calcifications**, which are tiny calcium deposits (1 mm) that appear as bright spots in imaging. While most μ-calcifications are benign, certain structural patterns or radiomic features can indicate malignancy.  
+This project aims to improve breast cancer detection by analyzing micro-calcifications (μ-calcifications) from high-resolution 3D breast tissue scans.
 
-Breast cancer diagnosis is commonly performed via mammography (two X-ray images per breast). Detecting small or subtle tumors is challenging, making automated analysis of μ-calcifications a potentially valuable tool.  
+While mammography, the standard screening method,relies on X-ray images to identify tumors, detecting small or subtle tumors is often challenging due to the complex structure of breast tissue. μ-Calcifications, tiny calcium deposits (around 1 mm), are highly visible in imaging and can provide additional diagnostic information
+
+Although many μ-calcifications are benign and occur naturally with aging, certain patterns, shapes, and textures are associated with malignancy. This project investigates whether radiomic features of individual μ-calcifications can be used to distinguish benign from malignant cases and ultimately support more accurate patient-level diagnosis. 
+
+## Background
+Mammography is the current state-of-the-art technique for breast cancer screening. It typically involves two X-ray images per breast. Despite its widespread use, tumor detection can be challenging unless the tumor is large or clearly distinguishable.
+
+Micro-calcifications are small deposits, typically around 1 mm in size, that appear as bright spots in imaging. Although they are often benign, clusters or specific structural patterns may indicate the presence of cancer. Radiologists often rely on these patterns during diagnosis.
+
+Recent research suggests that not only clusters, but also the properties of individual micro-calcifications, such as shape and texture, may provide predictive information about malignancy.
 
 **Clinical and Technical Motivation:**  
 - Radiologists typically label clusters of μ-calcifications, not individual instances, introducing label noise at the micro-level  
