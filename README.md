@@ -99,6 +99,7 @@ Key challenges:
 - Increase dataset size to improve generalization  
 - Investigate confidence calibration and uncertainty quantification  
 
+> **Note:** The Colab notebook highlights key observations and insights throughout the project, offering reasoning and context for data analysis, feature selection and model evaluation.
 ---
 
 ## References
