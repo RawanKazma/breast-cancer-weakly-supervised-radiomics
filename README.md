@@ -75,7 +75,9 @@ Key challenges:
 - Random Forest is the best-performing model overall  
 - MLP tuning increased precision but reduced recall → **shows precision-recall trade-off **
 - Logistic Regression provides an interpretable baseline  
-- Weak supervision and label noise remain significant challenges  
+- Weak supervision and label noise remain significant challenges
+
+- Inconclusion: radiomic features of individual μ-calcifications do contain predictive information, allowing models to classify them as benign or malignant under weak supervision. Aggregating micro-level predictions improves patient-level breast cancer detection (with F1 0.70). However, the limited dataset (100 patients) restricts model generalization and confidence in performance, indicating that further studies with larger cohorts or advanced weakly supervised methods like Multiple Instance Learning are needed to validate and enhance these results.
 
 ## Future Work
 
