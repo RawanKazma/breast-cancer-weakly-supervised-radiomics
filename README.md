@@ -67,7 +67,7 @@ Key challenges:
 
 **Patient-Level Aggregation**  
 - Max probability per patient for μ-calcifications  
-- Threshold optimized on **validation set** for balanced precision and recall  
+- Threshold optimized on validation set for balanced precision and recall  
 
 ## Results
 
