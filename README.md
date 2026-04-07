@@ -1,4 +1,4 @@
-# Breast Cancer Detection from 3D μ-Calcification - weakly supervised radiomics
+# Breast Cancer Detection from 3D μ-Calcification : Weakly Supervised Radiomics
 
 ## Project Overview
 
