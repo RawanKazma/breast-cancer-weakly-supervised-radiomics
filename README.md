@@ -2,25 +2,30 @@
 
 ## Project Overview
 
-This project focuses on the detection of breast cancer using imaging data, specifically through the analysis of μ-calcifications extracted from high-resolution 3D breast tissue scans.
+This project aims to detect breast cancer from high-resolution 3D breast tissue scans by analyzing **μ-calcifications**, which are tiny calcium deposits (1 mm) that appear as bright spots in imaging. While most μ-calcifications are benign, certain structural patterns or radiomic features can indicate malignancy.  
 
-Breast cancer diagnosis is commonly performed using mammography (two X-ray images per breast). Tumor detection can be challenging, particularly for small tumors. μ-Calcifications are tiny calcium deposits (~1 mm) that appear as bright spots in imaging. While often benign, certain patterns or structural features can indicate malignancy. This project investigates whether the **shape and texture properties of individual μ-calcifications** can be used to predict cancer.
+Breast cancer diagnosis is commonly performed via mammography (two X-ray images per breast). Detecting small or subtle tumors is challenging, making automated analysis of μ-calcifications a potentially valuable tool.  
 
-- **Clinical Relevance:** Radiologists typically label clusters of μ-calcifications rather than individual instances. This introduces **label noise** at the micro-level, which can lead to misdiagnosis.  
-- **Radiomic Features:** Quantitative measures of shape, texture, and wavelet-transformed features capture patterns beyond what is visually apparent, potentially improving early detection and reducing unnecessary invasive procedures.  
-- **Research Questoin:** _Can radiometric features of individual MCs be used to distinguish between benign and malignant regions in the presence of label noise on the patient-level diagnosis, and will it  be able to improve patient-level breast cancer detection?_
+**Clinical and Technical Motivation:**  
+- Radiologists typically label clusters of μ-calcifications, not individual instances, introducing label noise at the micro-level  
+- **Radiomic features** (shape, texture and wavelet-transformed descriptors) can capture patterns beyond human visual assessment, supporting early detection and reducing unnecessary invasive procedures  
+
+**Research Question:**  
+> Can radiomic features of individual μ-calcifications distinguish between benign and malignant regions despite patient-level label noise, and can this improve patient-level breast cancer detection?
+
+---
 
 ## Research Hypothesis
 
-- **Malignant μ-calcification:** located near a tumor  
-- **Benign μ-calcification:** not near a tumor  
+- **Malignant μ-calcification:** one that appears in the neighborhood of a tumor. These are considered potentially cancer-related because their presence is associated with malignant tissue
+- **Benign μ-calcification:** a μ-calcification that doesnt appear near a tumor. These may occur naturally due to aging or other non-cancerous processes and are generally considered harmless 
 
-The hypothesis is that radiomic features of individual μ-calcifications, including shape, texture, and wavelet-transformed descriptors, can help predict malignancy, even under weak supervision from patient-level labels.
+We hypothesize that the radiomic features of individual μ-calcificationscan help distinguish malignant from benign μ-calcifications, even when labels are noisy because only patient-level diagnoses are available. This, in turn, may improve the accuracy of patient-level breast cancer detection.
 
 ## Dataset
 
-- ~100 biopsy samples from female patients  
-- ~3500 μ-calcifications extracted  
+- 100 biopsy samples from female patients  
+- 3500 μ-calcifications extracted  
 - 150 radiomic features per μ-calcification (shape, texture, wavelet-transformed)  
 - Labels assigned at **patient level**, introducing **label noise**  
 
